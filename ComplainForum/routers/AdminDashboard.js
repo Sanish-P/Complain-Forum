@@ -48,6 +48,10 @@ adRouter.get('/',function(req, res){
 
 	currentSession = req.session;
 
+	console.log("GET Dashboard");
+
+	console.log(currentSession);
+
 	if(currentSession.username==undefined){
 		res.redirect('/');
 	}
@@ -60,7 +64,7 @@ adRouter.get('/',function(req, res){
 				postList = data;
 				
 
-				if(currentSession.role =="admin"){
+				if(currentSession.userRole =="admin"){
 
 					res.render('Dashboard',{ username : currentSession.username, posts : postList });
 				}

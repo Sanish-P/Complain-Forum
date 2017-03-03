@@ -38,5 +38,6 @@ $(document).ready(function(){
     $("#email").val('');
     $("#name").val('');
     $("#editForm").attr("action","/Users?role=admin");
+    $(".modal-title").text("Add Admin");
   });
 });
