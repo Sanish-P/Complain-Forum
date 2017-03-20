@@ -26,7 +26,7 @@ var userRouter = require('./routers/User.js');
 
 var postRouter = require('./routers/Post.js');
 
-var adminRouter = require('./routers/AdminDashboard.js');
+var adminRouter = require('./routers/Dashboard.js');
 
 app.use(bodyParser.json());
 
